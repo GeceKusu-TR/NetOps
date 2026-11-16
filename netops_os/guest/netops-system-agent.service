@@ -1,0 +1,19 @@
+[Unit]
+Description=NetOps OS privileged system bridge
+After=local-fs.target netops-axvord.service
+Wants=netops-axvord.service
+
+[Service]
+Type=simple
+User=root
+Group=root
+RuntimeDirectory=netops
+RuntimeDirectoryMode=0770
+ExecStart=/usr/bin/python3 /opt/netops/netops-system-agent.py
+Restart=on-failure
+RestartSec=2
+NoNewPrivileges=no
+PrivateTmp=true
+
+[Install]
+WantedBy=multi-user.target

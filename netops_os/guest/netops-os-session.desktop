@@ -1,0 +1,9 @@
+[Desktop Entry]
+Name=NetOps OS
+Comment=NetOps native control center
+Exec=/usr/bin/python3 /opt/netops/netops_app.py
+TryExec=/usr/bin/python3
+Type=Application
+DesktopNames=NetOps
+Terminal=false
+StartupNotify=false

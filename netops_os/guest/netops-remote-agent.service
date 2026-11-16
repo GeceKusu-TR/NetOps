@@ -1,0 +1,19 @@
+[Unit]
+Description=NetOps OS remote device command service
+After=network-online.target netops-system-agent.service
+Wants=network-online.target
+
+[Service]
+Type=simple
+User=root
+Group=root
+RuntimeDirectory=netops
+RuntimeDirectoryMode=0770
+ExecStart=/usr/bin/python3 /opt/netops/netops_remote_agent.py
+Restart=on-failure
+RestartSec=2
+NoNewPrivileges=no
+PrivateTmp=true
+
+[Install]
+WantedBy=multi-user.target

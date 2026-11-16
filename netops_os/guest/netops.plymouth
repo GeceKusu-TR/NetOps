@@ -1,0 +1,8 @@
+[Plymouth Theme]
+Name=NetOps OS
+Description=NetOps OS açılış ekranı
+ModuleName=script
+
+[script]
+ImageDir=/usr/share/plymouth/themes/netops
+ScriptFile=/usr/share/plymouth/themes/netops/netops.script

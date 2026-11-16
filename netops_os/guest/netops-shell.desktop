@@ -1,0 +1,13 @@
+[Desktop Entry]
+Type=Application
+Name=NetOps
+GenericName=System Control Center
+Comment=NetOps OS system control center
+Exec=/usr/bin/python3 /opt/netops/netops_app.py
+Icon=/opt/netops/netops-splash.png
+Terminal=false
+Categories=System;Utility;
+StartupNotify=true
+StartupWMClass=NetOps
+Terminal=false
+X-GNOME-Autostart-enabled=true
